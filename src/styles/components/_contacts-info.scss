@@ -1,0 +1,151 @@
+.contacts-info {
+ padding-top: 180px;
+ @media (max-width:740px) {
+  padding-top: 140px;
+ }
+ &__container {
+
+ }
+
+ &__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  color: var(--color-accent);
+  margin-bottom: 80px;
+  @media (max-width:1230px) {
+   font-size: 42px;
+   margin-bottom: 40px;
+  }
+  @media (max-width:968px) {
+   font-size: 36px;
+  }
+  @media (max-width:650px) {
+   font-size: 32px;
+  }
+ }
+
+ &__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 60px;
+  @media (max-width:968px) {
+   gap: 30px;
+  }
+ }
+
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  @media (max-width:968px) {
+   flex-direction: column;
+   gap: 30px;
+   align-items: flex-start;
+  }
+ }
+
+ &__list {
+  display: flex;
+  gap: 70px;
+  @media(max-width:1200px) {
+   gap: 35px;
+  }
+  @media (max-width:800px) {
+   gap: 15px;
+   flex-direction: column;
+  }
+ }
+
+ &__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ }
+
+ &__caption {
+  line-height: 130%;
+  color: var(--color-accent);
+ }
+
+ &__value {
+ font-weight: 600;
+ font-size: 22px;
+ line-height: 130%;
+ }
+
+ &__social {
+
+ }
+
+ &__box {
+
+ }
+}
+
+.social-contacts {
+ display: flex;
+ align-items: center;
+ gap: 40px;
+ &__item {
+
+ }
+}
+
+.come {
+ &__title {
+  margin-bottom: 40px;
+  @media (max-width:650px) {
+   margin-bottom: 30px;
+  }
+ }
+
+ &__list {
+  display: flex;
+  gap: 110px;
+  @media (max-width:1250px) {
+   gap: 0px;
+   justify-content: space-between;
+  }
+  @media (max-width:1050px) {
+   flex-direction: column;
+   gap: 15px;
+  }
+ }
+
+ &__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 310px;
+  @media (max-width:1230px) {
+   gap: 10px;
+  }
+ }
+
+ &__heading {
+ font-weight: 700;
+ font-size: 32px;
+ line-height: 130%;
+ @media (max-width:1230px) {
+  font-size: 26px;
+ }
+ @media (max-width:650px) {
+  font-size: 22px;
+ }
+ }
+
+ &__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  @media (max-width:650px) {
+   font-size: 16px;
+  }
+  span {
+   display: block;
+   font-weight: 700;
+  }
+ }
+}

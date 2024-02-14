@@ -1,0 +1,126 @@
+.joy {
+ &__container {}
+
+ &__title {
+  margin-bottom: 30px;
+ }
+
+ &__wrapper {}
+
+ &__cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  gap: 24px;
+  @media (max-width:1070px) {
+   grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width:740px) {
+   grid-template-columns: repeat(1, 1fr);
+   gap: 10px;
+  }
+  // grid-template-areas:
+  //   'one two three'
+  //   'one five three'
+  //   'four five three';
+      // @media (max-width:1200px) {
+      //   grid-template-areas:
+      //    'one two two'
+      //    'three five five'
+      //    'three four four';
+      //  }
+      // @media (max-width:968px) {
+      //   grid-template-areas:
+      //    'one one one'
+      //    'two two two'
+      //    'three three three'
+      //    'four four four'
+      //    'five five five';
+      //     grid-template-columns: repeat(1, 1fr);
+      //     gap: 10px;
+      //  }
+
+      
+  }
+
+
+ &__item {
+  min-height: 220px;
+  border-radius: 20px;
+  position: relative;
+  padding: 30px 30px 30px 30px;
+  background-image: url("/public/img/joy/Mask.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba( #62B2A31A,  0.1);
+  @media (max-width:740px) {
+   padding: 20px;
+  }
+  &-3 {
+   grid-row: 2 span;
+  }
+  // &-1 {
+  //  grid-area: one;
+  // }
+  // &-2 {
+  //  grid-area: two;
+  // }
+  // &-4{
+  //  grid-area: four;
+  // }
+  // &-5 {
+  //  grid-area: five;
+  // }
+  // &-3 {
+  //  grid-area: three;
+  // }
+ }
+ &__image {
+  // position: absolute;
+  // right: 20px;
+  // bottom: 20px;
+  align-self: flex-end;
+  width: 70px;
+  @media (max-width:740px) {
+   width: 50px;
+  }
+ }
+ &__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+ }
+ &__caption {
+ font-size: 22px;
+ font-weight: 600;
+ line-height: 130%;
+ margin-bottom: 15px;
+ @media (max-width:1130px) {
+  font-size: 18px;
+ }
+ }
+ &__link {
+  padding-top: 20px;
+  margin: auto 0 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--color-accent);
+ }
+ &__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: rgba(27, 62, 81, 0.6);
+  max-width: 290px;
+  @media (max-width:740px) {
+   font-size: 14px;
+  }
+  span {
+    color: rgba(27, 62, 81, 1);
+    font-weight: 500;
+  }
+ }
+}
+

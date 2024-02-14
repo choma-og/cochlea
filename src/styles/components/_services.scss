@@ -1,0 +1,103 @@
+.services {
+ background-color: #EAF2F6;
+ padding-top: 120px;
+ @media (max-width:740px) {
+  padding-top: 60px;
+ }
+ &__container {
+
+ }
+ &__list {
+  grid-template-columns: repeat(2 ,1fr);
+  gap: 50px;
+  @media (max-width:968px) {
+   gap: 20px;
+   grid-template-columns: repeat(1, 1fr);
+  }
+ }
+ &__card {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  &:hover .services__link{
+   opacity: 1;
+   visibility: visible;
+  }
+  @media (max-width:968px) {
+   min-height: 200px;
+  }
+  @media (max-width:740px) {
+   min-height: 150px;
+  }
+  &:hover .services-image {
+   width: 125%;
+  }
+  
+ }
+ &-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: width 1s ease-in-out 0s;
+ }
+ &__link {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-dark);
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease 0s;
+  @media (max-width:968px) {
+   opacity: 1;
+   visibility: visible;
+  }
+ }
+}
+.card-services {
+ padding: 40px;
+ @media (max:968px) {
+  padding: 30px;
+ }
+ @media (max-width:740px) {
+  padding: 20px;
+ }
+ &__caption {
+ font-weight: 700;
+ font-size: 32px;
+ line-height: 130%;
+ letter-spacing: 0.01em;
+ color: var(--color-dark);
+ margin-bottom: 20px;
+ @media (max-width:1230px) {
+  font-size: 26px;
+ }
+ @media (max-width:740px) {
+  font-size: 22px;
+  margin-bottom: 10px;
+ }
+ }
+ &__link {
+
+ }
+ &__text {
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 140%;
+ color: var(--color-accent);
+ max-width: 410px;
+ @media (max-width:740px) {
+  font-size: 16px;
+ }
+ }
+}

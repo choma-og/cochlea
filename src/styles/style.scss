@@ -1,0 +1,31 @@
+// базовые подключения
+@import "./settings";
+@import "./mixins";
+@import "./fonts";
+@import "./vars";
+
+// компоненты страницы
+
+// подключения компонентов страницы (большие компоненты)
+@import "./components/header";
+@import "./components/hero";
+@import "./components/contacts";
+@import "./components/services";
+@import "./components/purpose";
+@import "./components/about";
+@import "./components/reviews";
+@import "./components/should";
+@import "./components/regards";
+@import "./components/attendance-about";
+@import "./components/conditions";
+@import "./components/examinations";
+@import "./components/legal";
+@import "./components/consultation";
+@import "./components/contacts-info";
+@import "./components/joy";
+@import "./components/modal";
+@import "./components/suces";
+@import "./components/footer";
+
+// подключения компонентов страницы (маленькие компоненты)
+//detail

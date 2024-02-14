@@ -1,0 +1,44 @@
+<section class="section consultation">
+ <div class="consultation__container">
+  <div class="consultation__box">
+    <h2 class="consultation__title">Нужна консультация?</h2>
+    <div class="consultation__inner col-12 row">
+     <form action="/local/ajax/join.php" method="post" class="js-form consultation__form col-6">
+      <div class="consultation__wrapper">
+     
+       <div class="consultation__input wrapper__name">
+        <input name="user_name" class="consultation__name" type="text" id="consultation-name" data-type="text" placeholder=" ">
+        <label class="consultation__label" for="">Ваше имя</label>
+        <div class="validate__form-error validate__form-error--name js-error js-error-name">
+         <span>Перепроверьте корректность имени</span>
+        </div>
+       </div>
+     
+       <div class="consultation__input wrapper__phone">
+        <input data-mask="phone" name="user_phone" class="consultation__tel" data-type="phone" type="text" id="consultation-phone"
+         inputmode="text" placeholder=" ">
+        <label class="consultation__label" for="">Телефон для связи</label>
+        <div class="validate__form-error validate__form-error--phone js-error js-error-phone">
+         <span>Заполните телефон, мы позвоним на него</span>
+        </div>
+       </div>
+     
+      </div>
+      <div class="consultation__btns">
+       <button class="js-form-submit btn btn-reset btn-primary" type="submit">Заказать звонок</button>
+       <p>Нажимая &laquo;Отправить&raquo;, вы&nbsp;даете согласие на&nbsp;обработку своих <a href="#">персональных
+         данных</a>
+       </p>
+      </div>
+     
+     </form>
+
+     <p class="col-5 consultation__text">
+      Если вы&nbsp;не&nbsp;можете найти нужную информацию или вам необходима дополнительная консультация, пожалуйста, заполните форму заказа звонка. 
+      Наши специалисты свяжутся с&nbsp;вами и&nbsp;ответят на&nbsp;все ваши вопросы.
+     </p>
+
+    </div>
+  </div>
+ </div>
+</section>
