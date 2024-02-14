@@ -9926,7 +9926,7 @@ function initializeMaps() {
   });
   let placemarkCochlea = new ymaps.Placemark([53.339054992487846, 83.6689115423278], {}, {
     iconLayout: "default#image",
-    iconImageHref: "/public/map-point.jpeg",
+    iconImageHref: "../img/",
     iconImageSize: [37, 37],
     iconImageOffset: [-20, -30]
   });

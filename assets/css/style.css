@@ -1266,7 +1266,7 @@ body._lock {
 }
 
 .hero {
-  background-image: url("/cochlea/assets/img/bg.png");
+  background-image: url("/public/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2600,6 +2600,18 @@ body._lock {
   position: absolute;
   top: 8px;
   left: 42px;
+}
+
+@media (max-width: 650px) {
+  .js-error {
+    left: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .js-error {
+    font-size: 12px;
+  }
 }
 
 .js-error._active {
